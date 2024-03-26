@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <header class="fixed top-0 w-full">
+    <!--use this class for fixing nav bar-->
+    <nav class="bg-blue-400 md:bg-purple-500 lg:bg-gray-600">
+      <!--use bg class for nav background color--> 
+       <ul class="px-2 py-4 flex space-x-6 justify-end">
+        <!--here we use flex to to make a one horizontal direction of list-->
+         <li class="cursor-pointer text-black lg:text-white font-serif">Sign in</li>
+         <li class="cursor-pointer text-black lg:text-white font-serif">Contact</li>
+         <li class="cursor-pointer text-black lg:text-white font-serif">About</li>
+       </ul>
+    </nav>
+  </header>
+  <main class="flex">
+    <!--use flex to create responisve layout-->
+    <div class="main py-44 pl-9 bg-purple-200">
+      <div class="text-6xl my-8 font-semibold text-gray-800">
+          Movie
+      </div>
+      <p class="py-3 w-2/3 sm:w-2/3 md:w-2/3"><!--use w to adjust the widht of paragraph-->
+        Movies are more than just entertainment; they're portals into captivating worlds, stirring emotions, and profound narratives. Each frame weaves together a tapestry of storytelling, inviting audiences to laugh, cry, and ponder life's complexities. From epic adventures to intimate dramas, every film holds the power to transport viewers to distant galaxies, historical eras, or the depths of human psyche. Whether it's a gripping thriller that keeps us on the edge of our seats or a heartwarming tale that reminds us of the beauty in everyday moments, movies have an unparalleled ability to unite people, spark conversations, and inspire generations. So, grab your popcorn and immerse yourself in the magic of cinema.
+      </p>
+      <div class="my-9">
+        <!--my-9 maintain the margin between para and button-->
+          <button class="bg-blue-400 md:bg-purple-500 lg:bg-gray-600 px-5 py-3 text-white border-1 border-black hover:bg-blue-900 md:hover:bg-purple-900 lg:hover:bg-gray-900">Watch Now</button>
+      </div>
+    </div>
+     <div class=" bg-purple-200 flex items-center pr-48 ">
+       <img class=" md:object-cover " src="img.avif" alt="">
+     </div>
+    </main>
+ <footer class="bg-blue-400 md:bg-purple-500 lg:bg-gray-600 lg:text-white text-black py-6  fixed bottom-0 w-full ">
+  <div class="container mx-auto flex justify-center">
+    <p class="text-sm">&copy; 2024 Movies. All rights reserved.</p>
+  </div>
+  <div class="container mx-auto mt-4 flex justify-center">
+    <nav class="text-sm">
+      <a href="#" class="text-black lg:text-white hover:underline">Privacy Policy</a>
+      <span class="mx-2">|</span>
+      <a href="#" class="text-black lg:text-white hover:underline">Terms of Use</a>
+    </nav>
+  </div>
+  <div class="container mx-auto mt-4 flex justify-center">
+    <a href="https://www.facebook.com/movielnk/" class="mr-4"><img class="w-6" src="fb.png" alt="Facebook"></a>
+    <a href="" target="_blank" class="mr-4"><img class="w-6" src="twit.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com/movielink007/"><img class="w-6" src="insta.png" alt="Instagram"></a>
+  </div>
+   </footer>
+</body>
+</html>
